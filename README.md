@@ -32,7 +32,7 @@ IvanioBot is a multi-purpose and custom-made discord bot made as an overlord for
 # Self-Hosting
 Self-hosting isn't recommended as there could potentially be some errors that I won't be able to help with. The source code for this bot was opened to allow developers to have an insight of how this bot functions.
 
-# Current Personal To-do list
+# Current Personal To-do list:
 - Add extra fun commands
 - Music commands
 - Create command and event handlers
