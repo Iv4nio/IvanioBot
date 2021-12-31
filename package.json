@@ -1,0 +1,22 @@
+{
+  "name": "ivaniobot.js-discord-v13.4.0",
+  "version": "1.0.0",
+  "description": "A multi-purpose private discord bot made in javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Ivanio",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "discord.js": "^13.4.0",
+    "fs": "^0.0.1-security",
+    "mathjs": "^10.0.1",
+    "node-fetch": "^2.6.6",
+    "node-superfetch": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
