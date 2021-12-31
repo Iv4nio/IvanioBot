@@ -1,6 +1,8 @@
 # About
 IvanioBot is a multi-purpose and custom-made discord bot made as an overlord for my server.
 
+✔️ This repository is currently up-to-date 
+
 # Information
 - This discord bot is **private**, meaning if you try to invite the original bot itself it won't allow you to do that
 - The discord.js version is ``13.4.0``
