@@ -4,7 +4,7 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 ✔️ This repository is currently up-to-date 
 
 # Information
-- This discord bot is **private**, meaning if you try to invite the original bot itself it won't allow you to do that
+- This discord bot is **private**, meaning if you try to invite the original bot itself it won't allow entry
 - The discord.js version is ``13.4.0``
 - Default prefix: ``i!`` - Can be changed in file: ``config.json``
 - The file ``start.bat`` is there for developers who don't have anything to host the code - just open it up and the code should run
