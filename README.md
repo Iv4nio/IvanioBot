@@ -3,7 +3,7 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 
 ✔️ This repository is currently up-to-date 
 
-# Information
+# Code Information
 - This discord bot is **private**, meaning if you try to invite the original bot itself it won't allow entry
 - The discord.js version is ``13.4.0``
 - Default prefix: ``i!`` - Can be changed in file: ``config.json``
@@ -38,10 +38,6 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 
 # Self-Hosting
 Self-hosting isn't recommended as there could potentially be some errors that I won't be able to help with. The source code for this bot was opened to allow developers to have an insight of how this bot functions.
-
-# Current Personal To-do list:
-- Add extra fun commands
-- Music commands
 
 # Support
 Questions can be asked by adding me on discord: **Ivanio#7978**
