@@ -1,5 +1,5 @@
 # About
-IvanioBot is a multi-purpose and custom-made discord bot made as an overlord for my server.
+IvanioBot is a multi-purpose and custom-made discord bot which was created as an overlord for my server.
 
 ✔️ This repository is currently up-to-date 
 
