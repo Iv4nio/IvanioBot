@@ -1,16 +1,15 @@
-const { Client, Intents } = require('discord.js');
-const Discord = require('discord.js');
+const { Client, Intents, Collection } = require('discord.js');
 const client = new Client({ intents: [
 	Intents.FLAGS.GUILDS,
 	Intents.FLAGS.GUILD_MESSAGES]
 });
+const fs = require('fs');
 
 const config = require('./config.json');
 const prefix = config.prefix;
 
-const fs = require('fs');
-
-client.commands = new Discord.Collection();
+client.commands = new Collection();
+client.snipes = new Map();
 
 fs.readdirSync("./commands")
     .filter(file => file.endsWith(".js"))
@@ -18,8 +17,6 @@ fs.readdirSync("./commands")
         const command = require(`./commands/${file}`)
         client.commands.set(command.name, command)
     })
-
-client.snipes = new Map();
 
 client.on('messageDelete', async message => {
 		client.snipes.set(message.channel.id, {
@@ -42,52 +39,52 @@ client.on('messageCreate', async message => {
 		const command = args.shift().toLowerCase();
 
 		if (command === 'ping') {
-			client.commands.get('ping').execute(message, Discord, args, client)
+			client.commands.get('ping').execute(message, args, client)
 		}
 		if (command === 'avatar') {
-			client.commands.get('avatar').execute(message, Discord, args, client)
+			client.commands.get('avatar').execute(message, args, client)
 		}
 		if (command === 'offensivememe') {
-			client.commands.get('offensivememe').execute(message, Discord, args, client)
+			client.commands.get('offensivememe').execute(message, args, client)
 		}
 		if (command === '8ball') {
-			client.commands.get('8ball').execute(message, Discord, args, client)
+			client.commands.get('8ball').execute(message, args, client)
 		}
 		if (command === 'poll') {
-			client.commands.get('poll').execute(message, Discord, args, client)
+			client.commands.get('poll').execute(message, args, client)
 		}
 		if (command === 'rps') {
-			client.commands.get('rps').execute(message, Discord, args, client)
+			client.commands.get('rps').execute(message, args, client)
 		}
 		if (command === 'reverse') {
-			client.commands.get('reverse').execute(message, Discord, args, client)
+			client.commands.get('reverse').execute(message, args, client)
 		}
 		if (command === 'youtube') {
-			client.commands.get('youtube').execute(message, Discord, args, client)
+			client.commands.get('youtube').execute(message, args, client)
 		}
 		if (command === 'snipe') {
-			client.commands.get('snipe').execute(message, Discord, args, client)
+			client.commands.get('snipe').execute(message, args, client)
 		}
 		if (command === 'help') {
-			client.commands.get('help').execute(message, Discord, args, client)
+			client.commands.get('help').execute(message, args, client)
 		}
 		if (command === 'uptime') {
-			client.commands.get('uptime').execute(message, Discord, args, client)
+			client.commands.get('uptime').execute(message, args, client)
 		}
 		if (command === 'ban') {
-			client.commands.get('ban').execute(message, Discord, args, client)
+			client.commands.get('ban').execute(message, args, client)
 		}
 		if (command === 'kick') {
-			client.commands.get('kick').execute(message, Discord, args, client)
+			client.commands.get('kick').execute(message, args, client)
 		}
 		if (command === 'unban') {
-			client.commands.get('unban').execute(message, Discord, args, client)
+			client.commands.get('unban').execute(message, args, client)
 		}
 		if (command === 'clear') {
-			client.commands.get('clear').execute(message, Discord, args, client)
+			client.commands.get('clear').execute(message, args, client)
 		}
 		if (command === 'slowmode') {
-			client.commands.get('slowmode').execute(message, Discord, args, client)
+			client.commands.get('slowmode').execute(message, args, client)
 		}
 });
 
