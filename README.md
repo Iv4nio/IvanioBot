@@ -37,7 +37,6 @@ Self-hosting isn't recommended as there could potentially be some errors that I 
 # Current Personal To-do list:
 - Add extra fun commands
 - Music commands
-- Create command and event handlers
 - Add command category folders in the commands folder (e.g commands -> moderation -> <moderation commands here>)
 
 # Support
