@@ -42,7 +42,6 @@ Self-hosting isn't recommended as there could potentially be some errors that I 
 # Current Personal To-do list:
 - Add extra fun commands
 - Music commands
-- Add command category folders in the commands folder ``(e.g commands -> moderation -> <moderation commands here>)``
 
 # Support
 Questions can be asked by adding me on discord: **Ivanio#7978**
