@@ -11,6 +11,7 @@ IvanioBot is a multi-purpose and custom-made discord bot made as an overlord for
 
 # NPM Packages needed:
 **Required:** ``discord.js``, ``node-fetch``, ``node-superfetch``
+
 **Optional:** ``nodemon``
 
 # Commands
