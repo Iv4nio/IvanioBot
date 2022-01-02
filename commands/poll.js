@@ -1,9 +1,9 @@
+const { MessageEmbed } = require('discord.js');
+
 module.exports = {
     name: 'poll',
     description: 'Set up a voting poll with this command',
-    async execute(message, Discord, args, client) {
-
-        const { MessageEmbed } = require('discord.js');
+    async execute(message, args, client) {
 
         let theDescription = args.slice(1).join(" ")
         let channelID = message.mentions.channels.first()
