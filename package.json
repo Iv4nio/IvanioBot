@@ -9,10 +9,9 @@
   "author": "Ivanio",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
     "discord.js": "^13.5.0",
     "fs": "^0.0.1-security",
-    "mathjs": "^10.0.1",
+    "leaf-utils": "^1.0.9",
     "node-fetch": "^2.6.6",
     "node-superfetch": "^0.2.3"
   },
