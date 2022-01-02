@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'avatar',
     description: 'Displays the author\'s avatar',
-    execute(message, Discord, args, client) {
+    execute(message, args, client) {
             let user;
 
             if(message.mentions.users.first()) {
