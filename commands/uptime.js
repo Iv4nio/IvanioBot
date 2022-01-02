@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js")
 module.exports = {
     name: 'uptime',
     description: 'Shows how long the bot has been active',
-    execute(message, Discord, args, client) {
+    execute(message, args, client) {
 
         const days = Math.floor(client.uptime / 86400000)
         const hours = Math.floor(client.uptime / 3600000) % 24
