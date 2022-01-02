@@ -1,11 +1,10 @@
+const { MessageEmbed } = require('discord.js');
+const fetch = require('node-superfetch');
+
 module.exports = {
     name: 'youtube',
     description: 'Finds stats for a youtube channel',
-    async execute(message, Discord, args, client) {
-
-        const { MessageEmbed } = require('discord.js');
-
-        const fetch = require('node-superfetch');
+    async execute(message, args, client) {
 
         let name = args.slice(0).join(" ").replace(/ -/g, " ");
         let google = 'AIzaSyChndz6Q8zqhudAW5HwXrDi9dd9x9p92Ns';
