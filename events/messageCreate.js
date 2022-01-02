@@ -57,5 +57,8 @@ module.exports = {
 		if (command === 'slowmode') {
 			client.commands.get('slowmode').execute(message, args, client)
 		}
+		if (command === 'football') {
+			client.commands.get('football').execute(message, args, client)
+		}
     }
 }
