@@ -1,7 +1,7 @@
 module.exports = {
     name: '8ball',
     description: 'Solves questions by answering a yes/no',
-    execute(message, Discord, args, client) {
+    execute(message, args, client) {
 
         if(!args[0]) return message.channel.send('Please provide a question for the 8ball!\n**Format:** ``i!8ball (text here)``');
 
