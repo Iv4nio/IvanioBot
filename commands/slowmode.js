@@ -3,7 +3,7 @@ const { Permissions } = require('discord.js');
 module.exports = {
     name: 'slowmode',
     description: 'Activates slowmode in a channel',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
         if(!message.member.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS)) return message.channel.send('You do not have permission to use this comamnd!');
 
