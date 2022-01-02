@@ -3,7 +3,7 @@ const { MessageEmbed, MessageActionRow, MessageSelectMenu } = require('discord.j
 module.exports = {
     name: 'help',
     description: 'Shows all the commands within this bot.',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
             const row = new MessageActionRow()
             .addComponents(
