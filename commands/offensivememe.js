@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 module.exports = {
     name: 'offensivememe',
     description: 'Crude memes from reddit',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
         let data = await fetch(`https://meme-api.herokuapp.com/gimme/Offensivejokes`).then(response => response.json()) 
 
