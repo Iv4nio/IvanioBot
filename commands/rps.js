@@ -1,7 +1,7 @@
 module.exports = {
     name: 'rps',
     description: 'Rock paper scissors',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
         const botChoice = Math.ceil(Math.random() * 3)
 
