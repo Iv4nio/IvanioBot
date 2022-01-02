@@ -3,7 +3,7 @@ const { Permissions } = require('discord.js');
 module.exports = {
     name: 'clear',
     description: 'Purges a specific amount of messages',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
             if (!message.member.permissions.has(Permissions.FLAGS.MANAGE_MESSAGES)) return message.channel.send('You do not have permission to clear messages!');
             if (!args[0]) return message.channel.send('You must provide an amount of messages to clear!\n**Format:** ``i!clear [number]``');
