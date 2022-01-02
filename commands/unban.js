@@ -3,7 +3,7 @@ const { Permissions } = require('discord.js');
 module.exports = {
     name: 'unban',
     description: 'Unbans a member from a server',
-    async execute(message, Discord, args, client) {
+    async execute(message, args, client) {
 
         if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.channel.send('You do not have permission to unban members!');
 
