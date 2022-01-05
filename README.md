@@ -26,8 +26,9 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 
 **Fun:**
 - ``i!8ball`` - Asks questions to this command and it'll answer with variations of a yes/no
-- ``i!rps`` - Rock, paper, scissors
+- ``i!rps`` - Play a game of rock paper scissors with interactive buttons
 - ``i!offensivememe`` - Offensive memes retrieved from reddit
+- ``i!football`` - Play a football match
 
 **Moderation:**
 - ``i!ban`` - Bans a member from the server
