@@ -6,6 +6,7 @@ module.exports = {
     async execute(message, args, client) {
 
         if(!message.member.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS)) return message.channel.send('You do not have permission to use this comamnd!');
+        if(!message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS)) return message.channel.send('GIVE ME PERMISSION TO USE THIS SHIT');
 
         const value = Number(args[0]);
 

@@ -6,6 +6,7 @@ module.exports = {
     async execute(message, args, client) {
 
         if(!message.member.permissions.has(Permissions.FLAGS.KICK_MEMBERS)) return message.channel.send('You do not have permission to kick members!');
+        if(!message.guild.me.permissions.has(Permissions.FLAGS.KICK_MEMBERS)) return message.channel.send('Gimme fucking permissions to kick members');
 
         const mentionMember = message.mentions.members.first();
         let reason = args.slice(1).join(" ");

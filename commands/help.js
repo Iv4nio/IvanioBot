@@ -59,8 +59,9 @@ module.exports = {
         .setDescription("Below you will discover all the fun commands within the bot.\n**PREFIX:** ``i!``")
         .addFields(
             {name: "8ball", value: "Ask questions to this 8ball and it'll answer with variations of a yes or no"},
-            {name: "rps", value: "Rock paper scissors"},
-            {name: "offensivememe", value: "The most darkest (probably not even tbh) memes"}
+            {name: "rps", value: "Play a game of rock paper scissors (with interactive buttons)"},
+            {name: "offensivememe", value: "The most darkest (probably not even tbh) memes"},
+            {name: "football", value: 'Try to score a goal'}
         )
         .setColor('RANDOM')
         .setFooter('Bot coded by Ivanio', client.user.displayAvatarURL())

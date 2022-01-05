@@ -6,6 +6,7 @@ module.exports = {
     async execute(message, args, client) {
 
         if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.channel.send('You do not have permission to unban members!');
+        if(!message.guild.me.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.channel.send('Gib permission to unban members');
 
         let userID = args[0];
         let reason = args.slice(1).join(" ");
