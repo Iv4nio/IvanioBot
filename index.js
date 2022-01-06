@@ -7,7 +7,7 @@ const fs = require('fs');
 
 const express = require('express');
 const app = express();
-const port = 5100;
+const port = 5200;
 app.listen(port, () => console.log(`Bot running on http://localhost/:$%7Bport%7D`));
 
 client.commands = new Collection();
