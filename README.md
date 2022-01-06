@@ -6,7 +6,7 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 # Information
 - This discord bot itself is **private**, meaning if you try to invite the original bot itself it won't allow entry
 - The discord.js version is ``13.5.0``
-- [Replit](https://replit.com) and [Uptime Robot](https://uptimerobot.com) are used to host this bot 24/7
+- **[Replit](https://replit.com)** and **[Uptime Robot](https://uptimerobot.com)** are used to host this bot 24/7
 - Default prefix: ``i!`` - Can be changed in file: ``config.json``
 - The file ``start.bat`` is there for developers who don't have anything to host the code - just open it up and the code should run
 
