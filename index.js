@@ -5,7 +5,10 @@ const client = new Client({ intents: [
 });
 const fs = require('fs');
 
-const config = require('./config.json');
+const express = require('express');
+const app = express();
+const port = 5100;
+app.listen(port, () => console.log(`Bot running on http://localhost/:$%7Bport%7D`));
 
 client.commands = new Collection();
 client.snipes = new Map();
@@ -28,4 +31,5 @@ for (const file of eventFiles) {
 	}
 }
 
-client.login(config.token);
+const mySecret = process.env['env']
+client.login(mySecret);
