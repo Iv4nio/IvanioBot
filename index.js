@@ -23,8 +23,8 @@ for (let folder of commandFolder) {
     for (let file of commandFiles) {
         let command = require(`./commands/${folder}/${file}`);
         client.commands.set(command.name, command);
-    };
-};
+    }
+}
 
 for (const file of eventFiles) {
 	const event = require(`./events/${file}`);
@@ -35,5 +35,5 @@ for (const file of eventFiles) {
 	}
 }
 
-const mySecret = process.env['env'] // Only works in replit.com
+const mySecret = process.env['env']
 client.login(mySecret);
