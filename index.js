@@ -1,4 +1,4 @@
-const { Client, Intents, Collection } = require('discord.js');
+const { Client, Intents, Collection } = require('discord.js'); 
 const client = new Client({ intents: [
 	Intents.FLAGS.GUILDS,
 	Intents.FLAGS.GUILD_MESSAGES] 
@@ -8,19 +8,23 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const port = 5200;
-app.listen(port, () => console.log(`Bot running on http://localhost/:$%7Bport%7D`));
+app.listen(port, () => console.log(`Bot running on http://localhost/:$%7Bport%7D`)); 
 
 client.commands = new Collection();
 client.snipes = new Map();
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
+const commandFolder = fs.readdirSync('./commands');
 
-for (const file of commandFiles) {
-	const command = require(`./commands/${file}`)
+for (let folder of commandFolder) {
+    let commandFiles = fs.readdirSync(`./commands/${folder}`)
+    .filter(file => file.endsWith('.js'));
 
-	client.commands.set(command.name, command);
-}
+    for (let file of commandFiles) {
+        let command = require(`./commands/${folder}/${file}`);
+        client.commands.set(command.name, command);
+    };
+};
 
 for (const file of eventFiles) {
 	const event = require(`./events/${file}`);
@@ -31,5 +35,5 @@ for (const file of eventFiles) {
 	}
 }
 
-const mySecret = process.env['env']
+const mySecret = process.env['env'] // Only works in replit.com
 client.login(mySecret);

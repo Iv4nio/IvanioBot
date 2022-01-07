@@ -4,7 +4,8 @@ const prefix = config.prefix;
 module.exports = {
     name: 'messageCreate',
     async execute(message, client) {
-        if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
 
 		const args = message.content.slice(prefix.length).split(/ +/);
 		const command = args.shift().toLowerCase();
@@ -60,5 +61,5 @@ module.exports = {
 		if (command === 'football') {
 			client.commands.get('football').execute(message, args, client)
 		}
-    }
+  }
 }
