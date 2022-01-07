@@ -61,7 +61,9 @@ module.exports = {
             {name: "8ball", value: "Ask questions to this 8ball and it'll answer with variations of a yes or no"},
             {name: "rps", value: "Play a game of rock paper scissors (with interactive buttons)"},
             {name: "offensivememe", value: "The most darkest (probably not even tbh) memes"},
-            {name: "football", value: 'Try to score a goal'}
+            {name: "football", value: 'Try to score a goal'},
+            {name: "trivia", value: "Test your mind on some hard trivia questions"},
+            {name: "tictactoe", value: "Play a game of tictactoe with somebody"}
         )
         .setColor('RANDOM')
         .setFooter('Bot coded by Ivanio', client.user.displayAvatarURL())

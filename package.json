@@ -13,7 +13,7 @@
     "express": "^4.17.2",
     "fs": "^0.0.1-security",
     "leaf-utils": "^1.0.9",
-    "node": "^16.8.0",
+    "node": "^16.13.1",
     "node-fetch": "^2.6.6",
     "node-superfetch": "^0.2.3"
   },
