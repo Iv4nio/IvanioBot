@@ -10,8 +10,8 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 - Default prefix: ``i!`` - Can be changed in file: ``config.json``
 - The file ``start.bat`` is there for developers who don't have anything to host the code - just open it up and the code should run
 
-# NPM Packages needed:
-**Required:** ``discord.js``, ``node-fetch``, ``node-superfetch``
+# NPM Packages:
+**Required:** ``discord.js``, ``node-fetch``, ``node-superfetch``, ``leaf-utils``, ``express``
 
 **Optional:** ``nodemon``
 
