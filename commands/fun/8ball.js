@@ -14,7 +14,7 @@ module.exports = {
                         ':8ball: | **Yes definitely**',
                         ':8ball: | **Sure bro**',
                         ':8ball: | **Don\'t ask me**',
-                        ':8ball: | **Most likely**',
+                        ':8ball: | **Yes daddy**',
                         ':8ball: | **Yes m\'lady**',
                         ':8ball: | **Sorry this 8ball has been hacked**',
                         ':8ball: | **My mom says yes**',
