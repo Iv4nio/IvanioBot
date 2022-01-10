@@ -20,6 +20,8 @@ module.exports = {
         .setTimestamp()
         .setFooter('Poll started by: ' + message.author.username + '#' + message.author.discriminator)
 
+        message.channel.send('Your poll is now active in <#929969843464200232>')
+
         channel.send({ embeds: [embed] }).then((msg) => {
           msg.react('✅');
           msg.react('❌');
