@@ -30,6 +30,8 @@ IvanioBot is a multi-purpose and custom-made discord bot which was created as an
 - ``i!rps`` - Play a game of rock paper scissors with interactive buttons
 - ``i!offensivememe`` - Offensive memes retrieved from reddit
 - ``i!football`` - Play a football match
+- ``i!trivia`` - Test your small mind
+- ``i!tictactoe`` - Duel a user for a game of tic-tac-toe
 
 **Moderation:**
 - ``i!ban`` - Bans a member from the server
