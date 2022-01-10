@@ -5,20 +5,24 @@ module.exports = {
     description: 'Set up a voting poll with this command',
     async execute(message, args, client) {
 
-        let theDescription = args.slice(1).join(" ")
-        let channelID = message.mentions.channels.first()
+        const channel = message.guild.channels.cache.find(c => c.name === '📥-polls');
+        if(!channel) return message.channel.send('There isn\'t a channel for polls dumbass');
 
-        if(!theDescription) return message.channel.send("Please provide text for the poll!\n**Format:** ``i!poll (#channel) [text here]``");
-        if(!channelID) return message.channel.send("Please provide a channel for the poll to be in!\n**Format:** ``i!poll (#channel) [text here]``");
+        let msgArgs = args.join(' ');
+
+        if(!msgArgs) return message.channel.send('Add a message for your poll you fucking idiot')
 
         const embed = new MessageEmbed()
-            .setColor('RANDOM')
-            .setTitle('Voting Poll')
-            .setDescription(theDescription)
-            .setFooter('Poll started by: ' + message.author.username + '#' + message.author.discriminator)
+        .setColor('RANDOM')
+        .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
+        .setTitle('Voting Poll:')
+        .setDescription(msgArgs)
+        .setTimestamp()
+        .setFooter('Poll started by: ' + message.author.username + '#' + message.author.discriminator)
 
-            let msgEmbed = await channelID.send({ embeds: [embed] });
-            await msgEmbed.react('✅');
-            await msgEmbed.react('❌');
+        channel.send({ embeds: [embed] }).then((msg) => {
+          msg.react('✅');
+          msg.react('❌');
+        })
     }
 }
