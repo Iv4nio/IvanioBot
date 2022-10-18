@@ -35,5 +35,4 @@ for (const file of eventFiles) {
 	}
 }
 
-const mySecret = process.env['env']
-client.login(mySecret);
+client.login(process.env.token);
