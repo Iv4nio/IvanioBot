@@ -6,7 +6,7 @@ module.exports = {
     description: 'Crude memes from reddit',
     async execute(message, args, client) {
 
-        let data = await fetch(`https://meme-api.herokuapp.com/gimme/OffensiveJokesTwo`).then(response => response.json()) 
+        let data = await fetch(`https://meme-api.herokuapp.com/gimme/offensivejokesRM`).then(response => response.json()) 
 
         const embed = new MessageEmbed()
         .setTitle(data.title)
